@@ -10,7 +10,7 @@ const RotationalBanner = () => {
   let initialValue;
   try {
     initialValue = sessionStorage.getItem("banner") || 1;
-  } catch (e) {
+  } catch  {
     initialValue = 1;
   }
 

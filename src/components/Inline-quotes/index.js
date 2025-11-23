@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 
 const QuotesWrapper = styled.div`
@@ -14,8 +14,8 @@ const QuotesWrapper = styled.div`
     gap: 1.5rem;
     border: 2px solid transparent;
     border-image: linear-gradient(
-      to right bottom, 
-      #00b39f, 
+      to right bottom,
+      #00b39f,
       ${props => props.theme.DarkTheme ? "#121212" : "#fff"} 80%
     );
     border-image-slice: 1 0 1 1;
@@ -34,8 +34,8 @@ const QuotesWrapper = styled.div`
 
   .border {
     border-image: linear-gradient(
-      to left top, 
-      #00b39f, 
+      to left top,
+      #00b39f,
       ${props => props.theme.DarkTheme ? "#121212" : "#fff"} 80%
     );
     border-image-slice: 1 1 1 0;
@@ -78,7 +78,7 @@ const QuotesWrapper = styled.div`
       padding: 0;
       text-align: center;
     }
-   
+
     h5 {
       margin: 0 0 0.5rem 0;
       padding: 0.1rem;
